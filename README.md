@@ -17,8 +17,8 @@
 <br>835599 entries, 7 columns
 
 <br>**Interesting Finds**
-![image](graphs/Fire_Calls_2000-2020.png)
-![image](graphs/2019firecallsofinterest.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Fire_Calls_2000-2020.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/2019firecallsofinterest.png)
 
 
 ## Dataset 2: Police Incidents
@@ -36,7 +36,7 @@
 <br>Calculated the harversine distance between the latitude/longitude of all rows in data and the known latitude/longitude of all zipcodes in SF. Was able to estimate the zipcode.
 
 <br>**Interesting Finds**
-![image](graphs/Normalized_Crime_DPMS.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Normalized_Crime_DPMS.png)
 
 
 
@@ -47,4 +47,4 @@
 <br>Would be interesting to look into time of day to see trends in crime/fire, as well as Day Of Week.
 <br>What exactly happened on 12/21/2019 & 1/11/2020 that drove both crime & fire so high? Would be fascinating to look into it.
 <br>Originally intended to join both tables to see the trend over time, but the 2018 to present data had a significant drop off in rates that I did not have time to explore.
-![image](graphs/Normalized_Police_Calls_2003-2018.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Normalized_Police_Calls_2003-2018.png)
