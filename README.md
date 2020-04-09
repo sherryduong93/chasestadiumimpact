@@ -27,6 +27,8 @@
 **Report (2003 - 2018)**
 <br> 2215024 entries, 33 columns
 <br>Do not have zip code or neighborhood, only address, Latitude & Longitude
+<br>In general, crime seems to be flat and actually decreasing since the Chase Stadium Opened.
+<br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Total_Police_Calls_2003-2020.png)
 
 <br>**Report (2018 - Present)**
 <br>332828 entries, 36 columns
@@ -45,30 +47,31 @@
 <br>Used pandas to cut the json file down 77 rows & 5 columns
 
 ## Hypothesis Testing
-<br>**Null Hypothesis: Fire Department & Police Calls during event dates will be the same as non-event dates
-<br> Alternative Hypothesis: Fire Department & Police Calls during event dates will be higher than non-event dates
+<br>**Null Hypothesis: Fire Department Calls & Police Incidents during event dates will be the same as non-event dates
+<br> Alternative Hypothesis: Fire Department Calls & Police Incidents during event dates will be higher than non-event dates
 <br> Alpha: 0.05**
-<br> Methodology: Conducted MannWhitneyU Test as well as taking 1000 bootstrapped samples of 100 observations each from the samples of event date versus non-event date calls. For the bootstrapped samples, noticed there were outliers in both datasets on 12/20/2019, 1/11/2020. Removed these points from the data. Additionally, removed March 12th-present, as this was impacted by the California Shelter-In-Place movement.
+<br> Methodology: Conducted MannWhitneyU Test as well as taking 1000 bootstrapped samples of 100 observations each from the samples of event date versus non-event date calls. In the data, there were outliers in both datasets on 12/20/2019, 1/11/2020. Removed these points from the data. 
 <br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_fire.png)
 <br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonBox_Police.png)
 <br><br>
 ### Results: Fire Department Calls
-<br>MannWhitneyU Test Result : pvalue = 0.0379 -> Significant
-<br>CLT Result from bootstrapped Samples:
+<br>MannWhitneyU Test Result : pvalue = 0.069 -> Not-Significant
+<br>T-Test Statistic & Distribution: pvalue = 0.044 -> Significant 
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Fire.png)
 <br><br>
 ### Results: Police Department Calls
-MannWhitneyU Test Result : pvalue = 0.113 -> Not Significant
-<br>CLT Result from bootstrapped Samples:
+MannWhitneyU Test Result : pvalue = 0.02 -> Significant
+<br>T-Test Statistic & Distribution: pvalue = 0.0069 -> Significant
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Police.png)
 
 
 
-## Assumptions Made....
+## Assumptions Made & Caveats....
 <br>Data was normalized using annual population for SF as a whole, not drilled down to zipcode.
+<br>The event dates were slightly biased with 20% of events on Saturdays as compared to 10-15% for the remaining days. Would like to look into this in the future
 
 ## If Time Permits...
-<br>Would be interesting to look into time of day to see trends in crime/fire, as well as Day Of Week.
+<br>Would be interesting to look into time of day to see trends in crime/fire, as well as further look into Day Of Week.
 <br>What exactly happened on 12/21/2019 & 1/11/2020 that drove both crime & fire so high? Would be fascinating to look into it.
 <br>Originally intended to join both tables to see the trend over time, but the 2018 to present data had a significant drop off in rates that I did not have time to explore.
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Normalized_Police_Calls_2003-2018.png)
