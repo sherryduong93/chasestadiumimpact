@@ -38,6 +38,29 @@
 <br>**Interesting Finds**
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Normalized_Crime_DPMS.png)
 
+## Dataset 3: Events at Chase Center Stadium Data
+**Dataset was scraped from ChaseCenter.com/events in the form of a json file**
+<br>92 rows, 25 columns
+<br>Used pandas to cut the json file down 77 rows & 5 columns
+
+## Hypothesis Testing
+<br>**Null Hypothesis: Fire Department & Police Calls during event dates will be the same as non-event dates
+<br> Alternative Hypothesis: Fire Department & Police Calls during event dates will be higher than non-event dates
+<br> Alpha: 0.05**
+<br> Methodology: Conducted MannWhitneyU Test as well as taking 1000 bootstrapped samples of 100 observations each from the samples of event date versus non-event date calls. For the bootstrapped samples, noticed there were outliers in both datasets on 12/20/2019, 1/11/2020. Removed these points from the data. Additionally, removed March 12th-present, as this was impacted by the California Shelter-In-Place movement.
+<br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_fire.png)
+<br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonBox_Police.png)
+<br><br>
+### Results: Fire Department Calls
+<br>MannWhitneyU Test Result : pvalue = 0.0379 -> Significant
+<br>CLT Result from bootstrapped Samples:
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Fire.png)
+<br><br>
+### Results: Police Department Calls
+MannWhitneyU Test Result : pvalue = 0.113 -> Not Significant
+<br>CLT Result from bootstrapped Samples:
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Police.png)
+
 
 
 ## Assumptions Made....
