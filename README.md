@@ -36,6 +36,7 @@
 <br>Calculated the harversine distance between the latitude/longitude of all rows in data and the known latitude/longitude of all zipcodes in SF. Was able to estimate the zipcode.
 
 <br>**Interesting Finds**
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/2019_Crime_DPMS.png)
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Normalized_Crime_DPMS.png)
 
 ## Dataset 3: Events at Chase Center Stadium Data
