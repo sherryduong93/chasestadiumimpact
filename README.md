@@ -34,10 +34,13 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 <br>Calculated the harversine distance between the latitude/longitude of all rows in data and the known latitude/longitude of all zipcodes in SF. Was able to estimate the zipcode in order to narrow down to the same zipcodes used for the Fire Department Analysis.
 <br>**New Dataframe:**
 <br>37354 entries, 14 columns
-<br>**Interesting Finds**
+<br>**General EDA on Police Incidents as a whole**
 <br>In general, crime experienced an extreme upswing since 2011, but has been relatively flat since 2013 and actually decreasing since the Chase Stadium Opened. Similar seasonality seen with Fire Department Calls, though it general with normalizing it looks like crime went down.
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Total_Police_Calls_2003-2020.png)
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Incidents2003-2019.png)
+<br>**Dogpatch/Mission Bay Data from before and after Stadium opening**
+<br>Similar to the Fire Service Call Data, when looking into 2020, the volume seems to have dropped, but unlike the Fire Service Call data, there is not an obvious uptick in the winter, and instead is a gradual dropping of crime.
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentmbdp2019-2020.png)
 
 
 
@@ -58,8 +61,8 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentdistribution.png)
 <br><br>Distribution of Fire Service Calls & Police Incidents were roughly normally distributed, but indicated some outliers.
 Below are the distributions prior to removing the outliers. 2 extreme outliers on 12/21/2019 & 1/11/2020 were removed from the datasets before additional analysis.
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_fire.png)
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonBox_Police.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_Police.png.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonBox_fire.png)
 <br><br>
 ### Results: Fire Department Calls
 <br>**Number of Event Dates: 75 Number of Non-Event Dates: 134
