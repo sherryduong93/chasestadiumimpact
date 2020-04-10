@@ -14,9 +14,13 @@
 <br>**New Dataframe:**
 <br>956419 entries, 10 columns
 <br>**Interesting Finds**
+In general, the calls to the Fire Department have been increasing year over year, even when normalizing for population growth.
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Fire_Calls_2000-2020.png)
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/FireCallsinmbdp2019-2020.png)
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/2019firecallsofinterest.png)
+There is also some seasonality of the data, with peaks at the beginning of each season and lows mid-season. 
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/FireCalls2015-2020.png)
+However, when looking into 2020, the call volume seems to have dropped, but this is also due to the fact that it is the "low" part of the seasonal volume, and we would expect to see an uptick in April based on current trend. Because of this, I will proceed with hypothesis testing only comparing dates after the stadium opened.
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/FireCallsinmbdp2019-2020.png)
 
 
 ### Dataset 2: Police Incidents
@@ -47,7 +51,8 @@
 <br>**Null Hypothesis: Fire Department Calls & Police Incidents during event dates will be the same as non-event dates
 <br> Alternative Hypothesis: Fire Department Calls & Police Incidents during event dates will be higher than non-event dates
 <br> Alpha: 0.05**
-<br> Methodology: Conducted MannWhitneyU Test and T-Test on both sample populations (#Calls/Incidents on Event Dates vs. #Calls/Incidents not on event dates) In the data, there were outliers in both datasets on 12/20/2019, 1/11/2020. Removed these points from the data. 
+<br> Methodology: Conducted MannWhitneyU Test and T-Test on both sample populations (#Calls/Incidents on Event Dates vs. #Calls/Incidents not on event dates). 
+In the data, there were outliers in both datasets on 12/20/2019, 1/11/2020. Removed these points from the data. 
 <br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_fire.png)
 <br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonBox_Police.png)
 <br><br>
@@ -70,3 +75,5 @@ MannWhitneyU Test Result : pvalue = 0.02 -> Significant
 ## If Time Permits...
 <br>Would be interesting to look into time of day to see trends in crime/fire, as well as further look into Day Of Week.
 <br>What exactly happened on 12/21/2019 & 1/11/2020 that drove both crime & fire so high? Would be fascinating to look into it.
+<br>2018 Also had some extreme uptick in the summer, I would be curious to see what drove it.
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/2018allfirecalls.png)
