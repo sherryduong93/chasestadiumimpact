@@ -6,10 +6,12 @@
 
 ### Dataset 1: Fire Department Calls for Service
 <pre>-Data: 5243306 entries, 44 columns
-<br>-Null Values: 14297 entries in “zipcode”: Added 600 values for zipcode 94158
+<br>Null Values: 
+<br>-14297 entries in “zipcode”
 <br>-DtTm for specific incidents of the call are also missing, this may be interesting to look into if time permits, but not entirely necessary</pre>
 <br>**Data Cleaning**
 <pre>Zipcodes of interest ‘94107’,'94103', ‘94158’, ‘94105’
+<br>Added 6000 values for zipcode 94158
 <br>Call Types of interest: 'Marine Fire','Train / Rail Incident', 'Odor (Strange / Unknown)', 'Explosion','Traffic Collision','Alarms', 'Structure Fire', 'Other', 'Medical Incident’</pre>
 <br>**New Dataframe:**
 <pre>956419 entries, 10 columns</pre>
@@ -35,11 +37,11 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 <br>**New Dataframe:**
 <pre>37354 entries, 14 columns</pre>
 <br>**General EDA on Police Incidents as a whole**
-<pre>In general, crime experienced a steep decline up until 2011, where it has gradually increased and is relatively flat since 2013 and actually decreasing since the Chase Stadium Opened. Similar seasonality seen with Fire Department Calls, though it general with normalizing it looks like crime went down.</pre>
+<br>In general, crime experienced a steep decline up until 2011, where it has gradually increased and is relatively flat since 2013 and actually decreasing since the Chase Stadium Opened. Similar seasonality seen with Fire Department Calls, though it general with normalizing it looks like crime went down.
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Total_Police_Calls_2003-2020.png)
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Incidents2003-2019.png)
 <br>**Dogpatch/Mission Bay Data from before and after Stadium opening**
-<pre>Similar to the Fire Service Call Data, when looking into 2020, the volume seems to have dropped, but unlike the Fire Service Call data, there is not an obvious uptick in the winter, and instead is a gradual dropping of crime.</pre>
+<br>Similar to the Fire Service Call Data, when looking into 2020, the volume seems to have dropped, but unlike the Fire Service Call data, there is not an obvious uptick in the winter, and instead is a gradual dropping of crime.
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentmbdp2019-2020.png)
 
 
@@ -53,10 +55,10 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 
 
 ## Hypothesis Testing
-<br>**Null Hypothesis: Fire Department Calls & Police Incidents during event dates = non-event dates
-<br> Alternative Hypothesis: Fire Department Calls & Police Incidents during event dates > non-event dates
-<br> Alpha: 0.05**
-<pre> Methodology: Conducted MannWhitneyU Test and T-Test on both sample populations (#Calls/Incidents on Event Dates vs. #Calls/Incidents not on event dates). </pre>
+<br>**Null Hypothesis:** Fire Department Calls & Police Incidents during event dates = non-event dates
+<br> **Alternative Hypothesis:** Fire Department Calls & Police Incidents during event dates > non-event dates
+<br>** Alpha:** 0.05
+<br> Methodology: Conducted MannWhitneyU Test and T-Test on both sample populations (#Calls/Incidents on Event Dates vs. #Calls/Incidents not on event dates). 
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/firecallsdistribution.png)
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentdistribution.png)
 <br><br>Distribution of Fire Service Calls & Police Incidents were roughly normally distributed, but indicated some outliers.
@@ -69,6 +71,7 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 <br>Incidents on Event Dates: 15761, Incidents not on Event Dates: 24776**
 <br>-MannWhitneyU Test Result : pvalue = 0.069 -> Not-Significant
 <br>-T-Test Statistic & Distribution: pvalue = 0.044 -> Significant 
+<br>**Based on the T-Test, we can conclude that Event Dates have a higher number of daily Fire Department Service Calls than Non-Event Dates.**
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Fire.png)
 <br><br>
 ### Results: Police Incidents
@@ -76,6 +79,7 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 <br>Incidents on Event Dates: 3337, Incidents not on Event Dates: 5483**
 <br>-MannWhitneyU Test Result : pvalue = 0.02 -> Significant
 <br>-T-Test Statistic & Distribution: pvalue = 0.0069 -> Significant
+<br>**Based on the T-Test, we can conclude that Event Dates have a higher number of daily Police Incidents than Non-Event Dates.**
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Police.png)
 <br> 
 ### What about effects of Shelter In Place?
@@ -84,6 +88,7 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 <br>-MannWhitneyU Test Result (Police Incidents): pvalue = 0.13 -> Not Significant
 <br>-T-Test Statistic & Distribution (Fire Service) : pvalue = 0.11 -> Not Significant 
 <br>-T-Test Statistic & Distribution (Police Incidents) : pvalue = 0.098 -> Not Significant 
+<br>**Based on the results of all hypothesis tests after accounting for Shelter In Place, we can conclude that there is not a significant difference in the daily Fire Department Service Call volume or Police Incidents between Event & Non-event dates.**
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_FireWOSIP.png)
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_PoliceWOSIP.png)
 
@@ -94,6 +99,7 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 <br>-MannWhitneyU Test Result (Police Incidents): pvalue = 0.18 -> Not Significant
 <br>-T-Test Statistic & Distribution (Fire Service) : pvalue = 0.10 -> Not Significant 
 <br>-T-Test Statistic & Distribution (Police Incidents) : pvalue = 0.26 -> Not Significant 
+<br>**No signigicant difference between Basketball Events or Concerts in Fire Department Call volume or Police Incidents.**
 
 
 
@@ -114,6 +120,7 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 ## Maybe One Day.....
 <br>-Look into Saturdays in particular to compare events versus non-events.
 <br>-Compare results again after more time has passed.
+<br>-What about the same analysis, but for the Giants games?
 <br><br>In terms of incidents or calls overall, would be interesting to look into:
 <br>-Time of day or day of week
 <br>-What exactly happened on 12/21/2019 & 1/11/2020 that drove both crime & fire so high? 
