@@ -71,7 +71,7 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 ### Results: Police Department Calls
 <br>**Number of Event Dates: 75 Number of Non-Event Dates: 138
 <br>Incidents on Event Dates: 3337, Incidents not on Event Dates: 5483**
-MannWhitneyU Test Result : pvalue = 0.02 -> Significant
+<br>MannWhitneyU Test Result : pvalue = 0.02 -> Significant
 <br>T-Test Statistic & Distribution: pvalue = 0.0069 -> Significant
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Police.png)
 <br> **Looked into the week days of events versus non events in case the distribution of events was majority on weekends, which I hypothesize would have higher crime/fire calls in general. For the most part, Events were evenly spread out and only slightly biased towards Saturday & Thursday.**
