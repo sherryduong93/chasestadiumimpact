@@ -61,7 +61,7 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentdistribution.png)
 <br><br>Distribution of Fire Service Calls & Police Incidents were roughly normally distributed, but indicated some outliers.
 Below are the distributions prior to removing the outliers. 2 extreme outliers on 12/21/2019 & 1/11/2020 were removed from the datasets before additional analysis.
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_Police.png.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_Police.png)
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonBox_fire.png)
 <br><br>
 ### Results: Fire Department Calls
