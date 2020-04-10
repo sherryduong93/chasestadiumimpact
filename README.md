@@ -27,7 +27,7 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 **Report 1 (2003 - 2018)**
 <br> 2215024 entries, 33 columns
 <br>Do not have zip code or neighborhood, only address, Latitude & Longitude
-<br>In general, crime seems to be flat since 2013 and actually decreasing since the Chase Stadium Opened.
+<br>In general, crime experienced an extreme upswing since 2011, but has been relatively flat since 2013 and actually decreasing since the Chase Stadium Opened.
 <br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Total_Police_Calls_2003-2020.png)
 <br>**Report 2 (2018 - Present)**
 <br>332828 entries, 36 columns
@@ -45,7 +45,7 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 <br>92 rows, 25 columns
 <br>Used pandas to cut the json file down 77 rows & 5 columns
 
-<br>
+
 ## Hypothesis Testing
 <br>**Null Hypothesis: Fire Department Calls & Police Incidents during event dates will be the same as non-event dates
 <br> Alternative Hypothesis: Fire Department Calls & Police Incidents during event dates will be higher than non-event dates
