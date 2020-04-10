@@ -27,7 +27,7 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 **Report 1 (2003 - 2018)**
 <br> 2215024 entries, 33 columns
 <br>Do not have zip code or neighborhood, only address, Latitude & Longitude
-<br>In general, crime seems to be flat and actually decreasing since the Chase Stadium Opened.
+<br>In general, crime seems to be flat since 2013 and actually decreasing since the Chase Stadium Opened.
 <br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Total_Police_Calls_2003-2020.png)
 <br>**Report 2 (2018 - Present)**
 <br>332828 entries, 36 columns
@@ -38,7 +38,6 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 <br>37354 entries, 14 columns
 <br>**Interesting Finds**
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/2019_Crime_DPMS.png)
-![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Normalized_Crime_DPMS.png)
 
 
 ### Dataset 3: Events at Chase Center Stadium Data
@@ -52,12 +51,12 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 <br> Alternative Hypothesis: Fire Department Calls & Police Incidents during event dates will be higher than non-event dates
 <br> Alpha: 0.05**
 <br> Methodology: Conducted MannWhitneyU Test and T-Test on both sample populations (#Calls/Incidents on Event Dates vs. #Calls/Incidents not on event dates). 
-<br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/firecallsdistribution.png)
-<br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentdistribution.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/firecallsdistribution.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentdistribution.png)
 <br><br>Distribution of Fire Service Calls & Police Incidents were roughly normally distributed, but indicated some outliers.
 Below are the distributions prior to removing the outliers. 2 extreme outliers on 12/21/2019 & 1/11/2020 were removed from the datasets before additional analysis.
-<br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_fire.png)
-<br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonBox_Police.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_fire.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonBox_Police.png)
 <br><br>
 ### Results: Fire Department Calls
 <br>MannWhitneyU Test Result : pvalue = 0.069 -> Not-Significant
@@ -87,6 +86,6 @@ MannWhitneyU Test Result : pvalue = 0.02 -> Significant
 
 ## If Time Permits...
 <br>Would be interesting to look into time of day to see trends in crime/fire, as well as further look into Day Of Week.
-<br>What exactly happened on 12/21/2019 & 1/11/2020 that drove both crime & fire so high? Would be fascinating to look into it.
-<br>2018 Also had some extreme uptick in the summer, I would be curious to see what drove it.
+<br>What exactly happened on 12/21/2019 & 1/11/2020 that drove both crime & fire so high? And why was crime so low in 2010-2012?Would be fascinating to look into it.
+<br>2018 Also had some extreme uptick in the summer for Fire Service Calls, I would be curious to see what drove it.
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/2018allfirecalls.png)
