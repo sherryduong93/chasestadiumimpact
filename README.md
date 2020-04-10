@@ -52,7 +52,10 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 <br> Alternative Hypothesis: Fire Department Calls & Police Incidents during event dates will be higher than non-event dates
 <br> Alpha: 0.05**
 <br> Methodology: Conducted MannWhitneyU Test and T-Test on both sample populations (#Calls/Incidents on Event Dates vs. #Calls/Incidents not on event dates). 
-In the data, there were outliers in both datasets on 12/20/2019, 1/11/2020. Removed these points from the data. 
+<br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/firecallsdistribution.png)
+<br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentdistribution.png)
+<br><br>Distribution of Fire Service Calls & Police Incidents were roughly normally distributed, but indicated some outliers.
+Below are the distributions prior to removing the outliers. 2 extreme outliers on 12/21/2019 & 1/11/2020 were removed from the datasets before additional analysis.
 <br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonScatter_fire.png)
 <br>![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonBox_Police.png)
 <br><br>
@@ -65,12 +68,22 @@ In the data, there were outliers in both datasets on 12/20/2019, 1/11/2020. Remo
 MannWhitneyU Test Result : pvalue = 0.02 -> Significant
 <br>T-Test Statistic & Distribution: pvalue = 0.0069 -> Significant
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Police.png)
+<br> **Also looked into the week days of events versus non events in case the distribution of events was majority on Saturdays. For the most part, Events were evenly spread out and only slightly baised with more events on Saturday & Thursday**
+<br> 
+### What about effects of Shelter In Place?
+**Currently the data was capture from 9/6/2019 - 3/31/2020. Major Tech companies started having employees work from home around early March, and official Shelter In Place measures were enacted 3/16/2020. How did that impact crime?**
+<br>MannWhitneyU Test Result (Fire Service): pvalue = 0.20 -> Not Significant
+<br>MannWhitneyU Test Result (Police Incidents): pvalue = 0.18 -> Not Significant
+<br>T-Test Statistic & Distribution (Fire Service) : pvalue = 0.15 -> Not Significant 
+<br>T-Test Statistic & Distribution (Police Incidents) : pvalue = 0.13 -> Not Significant 
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_FireWOSIP.png)
+![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_PoliceWOSIP.png)
 
 
 
 ## Assumptions Made & Caveats....
 <br>Data was normalized using annual population for SF as a whole, not drilled down to zipcode.
-<br>The event dates were slightly biased with 20% of events on Saturdays as compared to 10-15% for the remaining days. Would like to look into this in the future
+<br>The event dates were slightly biased with 20% of events on Saturdays as compared to 10-15% for the remaining days. Would have liked to understand the impact of weekdays and see if any difference.
 
 ## If Time Permits...
 <br>Would be interesting to look into time of day to see trends in crime/fire, as well as further look into Day Of Week.
