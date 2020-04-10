@@ -35,9 +35,8 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 <br>**New Dataframe:**
 <br>37354 entries, 14 columns
 <br>**Interesting Finds**
-<br>In general, crime experienced an extreme upswing since 2011, but has been relatively flat since 2013 and actually decreasing since the Chase Stadium Opened.
+<br>In general, crime experienced an extreme upswing since 2011, but has been relatively flat since 2013 and actually decreasing since the Chase Stadium Opened. Similar seasonality seen with Fire Department Calls, though it general with normalizing it looks like crime went down.
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Total_Police_Calls_2003-2019.png)
-Similar seasonality seen with Fire Department Calls, though it general with normalizing it looks like crime went down.
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/Incidents2003-2019.png')
 
 
