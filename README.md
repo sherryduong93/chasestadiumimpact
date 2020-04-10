@@ -85,11 +85,11 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 <br>Sunday: 0.08
 <br> 
 ### What about effects of Shelter In Place?
-**The data was captured from 9/6/2019 - 3/31/2020. Major Tech companies started having employees work from home around early March, and official Shelter In Place measures were enacted 3/16/2020. How did that impact calls/incidents?**
-<br>MannWhitneyU Test Result (Fire Service): pvalue = 0.20 -> Not Significant
-<br>MannWhitneyU Test Result (Police Incidents): pvalue = 0.18 -> Not Significant
-<br>T-Test Statistic & Distribution (Fire Service) : pvalue = 0.15 -> Not Significant 
-<br>T-Test Statistic & Distribution (Police Incidents) : pvalue = 0.13 -> Not Significant 
+**The data was captured from 9/6/2019 - 3/31/2020. Major Tech companies started having employees work from home around early March, and official Shelter In Place measures were enacted 3/19/2020. How did that impact calls/incidents?**
+<br>MannWhitneyU Test Result (Fire Service): pvalue = 0.15 -> Not Significant
+<br>MannWhitneyU Test Result (Police Incidents): pvalue = 0.13 -> Not Significant
+<br>T-Test Statistic & Distribution (Fire Service) : pvalue = 0.11 -> Not Significant 
+<br>T-Test Statistic & Distribution (Police Incidents) : pvalue = 0.098 -> Not Significant 
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_FireWOSIP.png)
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_PoliceWOSIP.png)
 
@@ -98,7 +98,7 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policesbballconcertdist.png)
 <br>MannWhitneyU Test Result (Fire Service): pvalue = 0.078 -> Not Significant
 <br>MannWhitneyU Test Result (Police Incidents): pvalue = 0.18 -> Not Significant
-<br>T-Test Statistic & Distribution (Fire Service) : pvalue = 0.16 -> Not Significant 
+<br>T-Test Statistic & Distribution (Fire Service) : pvalue = 0.10 -> Not Significant 
 <br>T-Test Statistic & Distribution (Police Incidents) : pvalue = 0.26 -> Not Significant 
 
 
