@@ -74,15 +74,6 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 <br>MannWhitneyU Test Result : pvalue = 0.02 -> Significant
 <br>T-Test Statistic & Distribution: pvalue = 0.0069 -> Significant
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/EventsVsNonHypotheisTest_Police.png)
-<br> **Looked into the week days of events versus non events in case the distribution of events was majority on weekends, which I hypothesize would have higher crime/fire calls in general. For the most part, Events were evenly spread out and only slightly biased towards Saturday & Thursday.**
-<br>Day of Week
-<br>Monday: 0.14
-<br>Tuesday: 0.12
-<br>Wednesday: 0.13
-<br>Thursday: 0.18
-<br>Friday: 0.13
-<br>Saturday: 0.20
-<br>Sunday: 0.08
 <br> 
 ### What about effects of Shelter In Place?
 **The data was captured from 9/6/2019 - 3/31/2020. Major Tech companies started having employees work from home around early March, and official Shelter In Place measures were enacted 3/19/2020. How did that impact calls/incidents?**
@@ -106,9 +97,18 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 
 ## Assumptions Made & Caveats....
 <br>Data was normalized using annual population for SF as a whole, not drilled down to zipcode.
-<br>The event dates were slightly biased with 20% of events on Saturdays as compared to 10-15% for the remaining days. Would have liked to understand the impact of weekdays and see if any difference.
+<br> **Looked into the week days of events versus non events in case the distribution of events was majority on weekends, which I hypothesize would have higher incidents/fire calls in general. Events were biased towards Saturdays with 25% of Events on Saturdays.**
+<br>Day of Week
+<br>Monday: 0.13
+<br>Tuesday: 0.12
+<br>Wednesday: 0.13
+<br>Thursday: 0.16
+<br>Friday: 0.12
+<br>Saturday: 0.26
+<br>Sunday: 0.09
 
 ## Maybe One Day.....
+<br>Look into Saturdays in particular to compare events versus non-events.
 <br>In terms of incidents or calls overall, would be interesting to look into:
 <br>-Time of day or day of week
 <br>-What exactly happened on 12/21/2019 & 1/11/2020 that drove both crime & fire so high? 
