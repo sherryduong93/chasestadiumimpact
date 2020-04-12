@@ -61,7 +61,7 @@ However, when looking into 2020, the call volume seems to have dropped, but this
 ## Hypothesis Testing
 <br>**Null Hypothesis:** Fire Department Calls & Police Incidents during event dates = non-event dates
 <br> **Alternative Hypothesis:** Fire Department Calls & Police Incidents during event dates > non-event dates
-<br>** Alpha:** 0.05
+<br>**Alpha:** 0.05
 <br> Methodology: Conducted MannWhitneyU Test and T-Test on both sample populations (#Calls/Incidents on Event Dates vs. #Calls/Incidents not on event dates), due to different sample sizes & standard deviations.
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/firecallsdistribution.png)
 ![image](https://github.com/sherryduong93/chasestadiumimpact/blob/working/Graphs/policeincidentdistribution.png)
@@ -106,9 +106,9 @@ Below are the distributions prior to removing the outliers. 2 extreme outliers o
 <br>**No significant difference between Basketball Events or Concerts in Fire Department Call volume or Police Incidents.**
 
 ## Conclusion: Sports fans are only congesting public transit, and not much else.
-<br>No significant difference in police incidents of fire department call volume on dates with events at the Chase Center.
-<br>Shelter in Place has had a significant impact on decreasing call volume & incidents.
-<br>No significant difference between basketball events and concerts on police incidents or call volume.
+<br>1. No significant difference in police incidents of fire department call volume on dates with events at the Chase Center.
+<br>2. Shelter in Place has had a significant impact on decreasing call volume & incidents.
+<br>3. No significant difference between basketball events and concerts on police incidents or call volume.
 
 
 ## Assumptions Made & Caveats....
